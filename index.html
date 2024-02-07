@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Meta tags -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- External CSS libraries -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.1/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <!-- Custom styles -->
+  <style>
+    .font-family {
+      font-family: 'Manrope', sans-serif;
+    }
+
+    /* Adjust image width and height for carousel */
+    .carousel-item img {
+      width: 68.75rem;
+    }
+  </style>
+  <title>Hockey’s website</title>
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <nav class="flex justify-between mt-8 ml-8 mr-8">
+      <div>
+        <!-- Logo -->
+        <h3 class="text-black text-3xl font-extrabold font-family">Hockey<span class="text-[#FF4240]">’</span>s</h3>
+      </div>
+      <div>
+        <!-- Navigation links -->
+        <div class="">
+          <ul class="hidden lg:flex gap-10 justify-center mt-3">
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Pages</a></li>
+            <li><a href="">Blog</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div>
+        <!-- Button to get tickets -->
+        <button class="bg-[#FF4240] rounded-lg p-4 text-white font-family text-base">Get Ticket</button>
+      </div>
+    </nav>
+    <!-- Banner -->
+    <banner>
+      <div class="carousel mt-12 lg:ml-16 relative">
+        <!-- Carousel items -->
+        <div id="slide1" class="carousel-item item relative w-full">
+          <img src="./images/Banner.png" class="w-full" />
+          <!-- Carousel navigation buttons -->
+          <div class="absolute flex justify-start transform -translate-y-1/2 left-5 right-5 top-3/4">
+            <a href="#slide3" class="btn btn-circle">❮</a>
+            <a href="#slide2" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+        <!-- Additional carousel items -->
+        <div id="slide2" class="carousel-item relative w-full">
+          <img src="./images/2.png" class="w-full" />
+          <div class="absolute flex justify-start transform -translate-y-1/2 left-5 right-5 top-3/4">
+            <a href="#slide1" class="btn btn-circle">❮</a>
+            <a href="#slide3" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+        <div id="slide3" class="carousel-item relative w-full">
+          <img src="./images/3.png" class="w-full" />
+          <div class="absolute flex justify-start transform -translate-y-1/2 left-5 right-5 top-3/4">
+            <a href="#slide2" class="btn btn-circle">❮</a>
+            <a href="#slide1" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+      </div>
+      <!-- Banner text -->
+      <div class="p-3 lg:w-4/12 h-28 rounded-2xl absolute bg-black text-white text-center lg:-bottom-40 lg:right-36">
+        <h3 class="text-lg font-bold font-family">Meet all the heroes from the field</h3>
+        <p>Discover the thrilling world of hockey and join us to celebrate the champions of the sport.</p>
+      </div>
+    </banner>
+  </header>
+  <!-- Main content -->
+  <hr class="mt-8">
+  <main>
+    <!-- Section 1 -->
+    <section>
+      <div class="text-center grid gap-2 bg-slate-50 mt-36 lg:mt-12 lg:w-8/12 lg:ml-40">
+        <h3 class="text-black text-lg font-bold font-family">Professional Hockey Club</h3>
+        <p>Experience the excitement of professional hockey and witness the skills of top players in action.</p>
+      </div>
+      <!-- Progress Indicators -->
+      <div>
+        <div class="text-center lg:flex mt-10">
+          <!-- Progress Indicator 1 -->
+          <div class="lg:w-1/4">
+            <div class="radial-progress text-primary font-bold rotate-180 text-orange-500" style="--value:87;"
+              role="progressbar"><span class="text-black rotate-180">87%</span></div>
+            <div>
+              <h4>Training Facilities</h4>
+              <p>State-of-the-art facilities for professional training and skill development.</p>
+            </div>
+          </div>
+          <!-- Progress Indicator 2 -->
+          <div class="lg:w-1/4">
+            <div class="radial-progress text-primary font-bold rotate-180 text-[#74E291]" style="--value:95;"
+              role="progressbar"><span class="text-black rotate-180">95%</span></div>
+            <h4>Player Development</h4>
+            <p>Comprehensive programs to nurture talent and elevate players to their full potential.</p>
+          </div>
+          <!-- Progress Indicator 3 -->
+          <div class="lg:w-1/4">
+            <div class="radial-progress text-primary font-bold rotate-180 text-[#f6c329]" style="--value:90;"
+              role="progressbar"><span class="text-black rotate-180">90%</span></div>
+            <h4>Community Engagement</h4>
+            <p>Engage with fans and communities to promote the spirit of hockey and sportsmanship.</p>
+          </div>
+          <!-- Progress Indicator 4 -->
+          <div class="lg:w-1/4">
+            <div class="radial-progress text-primary font-bold rotate-180" style="--value:80;"
+              role="progressbar"><span class="text-black rotate-180">80%</span></div>
+            <h4>Championship Legacy</h4>
+            <p>A rich history of championships and a commitment to excellence on and off the ice.</p>
+          </div>
+        </div>
+    </section>
+    <hr class="mt-8">
+    <!-- Section 2 -->
+    <section>
+      <div class="text-center mt-4">
+        <h3 class="text-black text-lg font-bold font-family">Program Sections</h3>
+        <p>Explore our diverse programs designed to cater to players of all ages and skill levels.</p>
+      </div>
+      <hr>
+      <div class="lg:w-11/12 lg:ml-12">
+        <div class="lg:flex gap-4 mt-8">
+          <!-- Program Section 1 -->
+          <div class="hero h-full w-full" style="background-image: url(./images/2.png);">
+            <!-- Program details -->
+            <div class="hero-overlay bg-opacity-60"></div>
+            <div class="hero-content text-center text-neutral-content">
+              <div class="max-w-md">
+                <h1 class="mb-5 text-5xl font-bold">Junior Program</h1>
+                <p class="mb-5">Join our junior program and embark on a journey of skill development and teamwork.</p>
+                <button class="btn btn-primary bg-[#FF4240]">Register Now!</button>
+              </div>
+            </div>
+          </div>
+          <!-- Program Section 2 -->
+          <div class="hero mt-8 lg:mt-0 h-full w-full" style="background-image: url(./images/3.png);">
+            <!-- Program details -->
+            <div class="hero-overlay bg-opacity-60"></div>
+            <div class="hero-content text-center text-neutral-content">
+              <div class="max-w-md">
+                <h1 class="mb-5 text-5xl font-bold">Teenager Program</h1>
+                <p class="mb-5">Elevate your game with our specialized program for teenagers. Unleash your potential
+                  and compete at the highest level.</p>
+                <button class="btn btn-primary bg-[#FF4240]">Register Now!</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Additional Program Section -->
+        <div class="mt-8">
+          <div class="hero h-full w-full" style="background-image: url(./images/4.png);">
+            <!-- Program details -->
+            <div class="hero-overlay bg-opacity-60"></div>
+            <div class="hero-content text-center text-neutral-content">
+              <div class="max-w-md">
+                <h1 class="mb-5 text-5xl font-bold">Professional Program</h1>
+                <p class="mb-5">Take your game to the next level with our professional program. Train alongside
+                  seasoned pros and compete on the grand stage.</p>
+                <button class="btn btn-primary bg-[#FF4240]">Register Now!</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr class="mt-8 mb-8">
+    <!-- Section 3 -->
+    <section>
+      <div class="text-center">
+        <h3 class="text-black text-lg font-bold font-family">Our New Products</h3>
+        <p>Explore our latest collection of high-quality hockey gear and accessories.</p>
+      </div>
+      <!-- Product Grid -->
+      <div class="lg:grid grid-cols-2 grid-rows-2 mt-14 gap-x-10 gap-y-8 lg:ml-32">
+        <!-- Product 1 -->
+        <div class="flex">
+          <div>
+            <img src="./images/jacket.png" alt="Hockey Jacket">
+          </div>
+          <!-- Product details -->
+          <div class="flex relative">
+            <div class="rating rating-xl">
+              <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400" /><p>5.0</p>
+            </div>
+            <div class="rating gap-1">
+             <input type="radio" name="rating-3" class="mask mask-heart bg-lime-100"/><p>200</p>
+            </div>
+            <div class=" mt-8 absolute left-12">
+              <h4>Hockey Jacket</h4>
+              <p>A stylish and durable jacket designed for hockey enthusiasts.</p>
+               <p>$89.99</p>
+            </div>
+          </div>
+        </div>
+        <!-- Product 2 -->
+        <div class="flex">
+          <div>
+            <img src="./images/cap.png" alt="Hockey Cap">
+          </div>
+          <!-- Product details -->
+          <div class="flex relative">
+            <div class="rating rating-xl">
+              <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400" /><p>5.0</p>
+            </div>
+            <div class="rating gap-1">
+             <input type="radio" name="rating-3" class="mask mask-heart bg-lime-100"/><p>200</p>
+            </div>
+            <div class=" mt-8 absolute left-12">
+              <h4>Hockey Cap</h4>
+              <p>A comfortable and stylish cap to showcase your love for hockey.</p>
+               <p>$19.99</p>
+            </div>
+          </div>
+        </div>
+        <!-- Product 3 -->
+        <div class="flex">
+          <div>
+            <img src="./images/helmet.png" alt="Hockey Helmet">
+          </div>
+          <!-- Product details -->
+          <div class="flex relative">
+            <div class="rating rating-xl">
+              <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400" /><p>5.0</p>
+            </div>
+            <div class="rating gap-1">
+             <input type="radio" name="rating-3" class="mask mask-heart bg-lime-100"/><p>200</p>
+            </div>
+            <div class=" mt-8 absolute left-12">
+              <h4>Hockey Helmet</h4>
+              <p>A high-quality helmet for maximum protection and comfort on the ice.</p>
+               <p>$129.99</p>
+            </div>
+          </div>
+        </div>
+        <!-- Product 4 -->
+        <div class="flex">
+          <div>
+            <img src="./images/t-shirt.png" alt="Hockey T-Shirt">
+          </div>
+          <!-- Product details -->
+          <div class="flex relative">
+            <div class="rating rating-xl">
+              <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400" /><p>5.0</p>
+            </div>
+            <div class="rating gap-1">
+             <input type="radio" name="rating-3" class="mask mask-heart bg-lime-100"/><p>200</p>
+            </div>
+            <div class=" mt-8 absolute left-12">
+              <h4>Hockey T-Shirt</h4>
+              <p>A classic and comfortable t-shirt for everyday wear, on and off the rink.</p>
+               <p>$29.99</p>
+            </div>
+          </div>
+        </div>
+        <!-- Product 5 -->
+        <div class="flex">
+          <div>
+            <img src="./images/ball-nokrachokra.png" alt="Hockey Ball">
+          </div>
+          <!-- Product details -->
+          <div class="flex relative">
+            <div class="rating rating-xl">
+              <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400" /><p>5.0</p>
+            </div>
+            <div class="rating gap-1">
+             <input type="radio" name="rating-3" class="mask mask-heart bg-lime-100"/><p>200</p>
+            </div>
+            <div class=" mt-8 absolute left-12">
+              <h4>Hockey Ball</h4>
+              <p>An official-size hockey ball designed for superior performance and durability.</p>
+               <p>$9.99</p>
+            </div>
+          </div>
+        </div>
+        <!-- Product 6 -->
+        <div class="flex">
+          <div>
+            <img src="./images/helmet.png" alt="Hockey Helmet">
+          </div>
+          <!-- Product details -->
+          <div class="flex relative">
+            <div class="rating rating-xl">
+              <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400" /><p>5.0</p>
+            </div>
+            <div class="rating gap-1">
+             <input type="radio" name="rating-3" class="mask mask-heart bg-lime-100"/><p>200</p>
+            </div>
+            <div class=" mt-8 absolute left-12">
+              <h4>Hockey Helmet</h4>
+              <p>A high-quality helmet for maximum protection and comfort on the ice.</p>
+               <p>$129.99</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Section 4 -->
+    <section>
+      <div class="text-center mt-28">
+        <h3 class="text-black text-lg font-bold font-family">Clients Question</h3>
+        <p>Here are some common questions from our clients. If you have a question not listed here, feel free to
+          <a href="#contact" class="text-[#FF4240]">contact us</a>.</p>
+      </div>
+     <!-- Client Questions -->
+<div class="flex gap-x-12 mt-24 lg:ml-28">
+  <div><img src="./images/question-icon.png" alt="Question Icon"></div>
+  <div>
+    <!-- Accordion -->
+    <div class="collapse collapse-plus bg-base-200">
+      <input type="radio" name="my-accordion-3" id="question1" checked="checked" /> 
+      <div class="collapse-title text-xl font-medium">
+        What are the key features to look for in a hockey stick?
+      </div>
+      <div class="collapse-content"> 
+        <p>When choosing a hockey stick, consider factors such as the material (wood, composite), flex, length, and blade curve. Look for a stick that suits your playing style and skill level.</p>
+      </div>
+    </div>
+    <!-- Accordion -->
+    <div class="collapse collapse-plus bg-base-200">
+      <input type="radio" name="my-accordion-3" id="question2" /> 
+      <div class="collapse-title text-xl font-medium">
+        How do I select the right size of hockey skates?
+      </div>
+      <div class="collapse-content"> 
+        <p>To select the right size of hockey skates, measure the length and width of your foot and refer to the manufacturer's sizing chart. Consider factors such as comfort, fit, and support.</p>
+      </div>
+    </div>
+    <!-- Accordion -->
+    <div class="collapse collapse-plus bg-base-200">
+      <input type="radio" name="my-accordion-3" id="question3" /> 
+      <div class="collapse-title text-xl font-medium">
+        What are the benefits of using hockey protective gear?
+      </div>
+      <div class="collapse-content"> 
+        <p>Hockey protective gear, such as helmets, shoulder pads, elbow pads, and shin guards, provides essential protection against injuries during gameplay. It reduces the risk of concussions, fractures, and bruises.</p>
+      </div>
+    </div>
+    <!-- Accordion -->
+    <div class="collapse collapse-plus bg-base-200">
+      <input type="radio" name="my-accordion-3" id="question4" /> 
+      <div class="collapse-title text-xl font-medium">
+        How can I maintain my hockey equipment for longevity?
+      </div>
+      <div class="collapse-content"> 
+        <p>To maintain your hockey equipment, regularly clean and dry it after each use. Inspect for any signs of wear and tear, and repair or replace damaged parts. Store your equipment in a dry and ventilated area to prevent odor and mold buildup.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+  </main>
+    <!-- Footer -->
+    <footer class="footer p-10 bg-base-200 text-base-content mt-12">
+      <nav>
+        <h6 class="footer-title">Services</h6> 
+        <a class="link link-hover">Branding</a>
+        <a class="link link-hover">Design</a>
+        <a class="link link-hover">Marketing</a>
+        <a class="link link-hover">Advertisement</a>
+      </nav> 
+      <nav>
+        <h6 class="footer-title">Company</h6> 
+        <a class="link link-hover">About us</a>
+        <a class="link link-hover">Contact</a>
+        <a class="link link-hover">Jobs</a>
+        <a class="link link-hover">Press kit</a>
+      </nav> 
+      <nav>
+        <h6 class="footer-title">Legal</h6> 
+        <a class="link link-hover">Terms of use</a>
+        <a class="link link-hover">Privacy policy</a>
+        <a class="link link-hover">Cookie policy</a>
+      </nav> 
+      <!-- Newsletter Subscription -->
+      <form>
+        <h6 class="footer-title">Newsletter</h6> 
+        <fieldset class="form-control w-80">
+          <label class="label">
+            <span class="label-text">Enter your email address</span>
+          </label> 
+          <div class="join">
+            <input type="text" placeholder="username@site.com" class="input input-bordered join-item" /> 
+            <button class="btn btn-primary join-item">Subscribe</button>
+          </div>
+        </fieldset>
+      </form>
+    </footer>
+</body>
+</html>
